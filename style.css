@@ -1,308 +1,180 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
-/*#4f7344*/
 body {
-    background-color: #253621;
+    background-color: #ededed;
 }
 
-nav {
-    background-color: #2c4126;
+#navbar {
+    background-color: #0B0D17;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    height: 4.5em;
-    border-bottom: 1px solid black;
-    flex-wrap: wrap;
-}
-
-nav h1 {
-    color: blanchedalmond;
-    font-family: Calibri;
-    letter-spacing: 4px;
-    padding-left: 1em;
-    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, -40px -40px 0px rgba(28, 110, 164, 0);
-}
-
-nav li {
-    display: inline-block;
-}
-
-nav a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin: 0 1.2em;
-    font-size: 1.2em;
-    font-family: Calibri;
-}
-
-nav a:hover {
-    border-bottom: 2px solid #3dc530;
-}
-
-header {
-    background-image: url('https://oltnews.com/wp-content/uploads/2022/04/BIS-green-bond-newweb.png');
-    height: 30em;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-flow: column wrap;
-}
-
-header h1 {
-    font-family: 'Roboto Mono', monospace;
-    color: #fff;
-    font-size: 1.7em;
-    text-align: center;
-    line-height: 1.7;
-    text-shadow: 4px 4px 4px black;
-}
-
-
-header a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2em;
-    font-family: 'Roboto Mono', monospace;
-    background-color: #3f742f;
-    border: 1.5px solid #fff;
-    padding: 1em 1.8em;
-    border-radius: .2em;
-    text-shadow: 1px 1px 1px black;
-}
-
-header a:hover {
-    background-color: #507744;
-}
-
-#mision {
-    height: 25em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    /* background-color: #3f742f; */
-}
-
-#mision h2 {
-    font-family: 'Roboto Mono', monospace;
-    color: #fff;
-    font-size: 1.7em;
-    text-align: center;
-    line-height: 1.7;
-    text-shadow: 2px 2px 2px black;
-}
-
-#mision img {
-    max-width: 100%;
-    max-height: 100%;
-    width: 50%;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-#mision img:hover {
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    box-shadow: 0px 0px 15px 15px #3dc530;
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-}
-
-.contenido-mision {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    border: 2px solid #3dc530;
-    margin-right: 0.5em;
-    border-radius: .2em;
-    flex-wrap: wrap;
-}
-
-.contenido-mision h2 {
-    margin-bottom: 1.5em;
-}
-
-.contenido-mision p {
-    text-align: center;
-    color: #fff;
-    font-family: Calibri;
-    font-size: 1.2em;
-}
-
-.contenedor-proyectos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.contenedor-proyectos h2 {
-    font-family: 'Roboto Mono', monospace;
-    color: #fff;
-    font-size: 1.7em;
-    text-align: center;
-    line-height: 1.7;
-    text-shadow: 2px 2px 2px black;
-    margin: .3em 0;
-}
-
-#proyectos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.proyecto {
-    display: flex;
-    margin: 2em 0;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.contenido-proyecto {
+    height: 4em;
+    position: fixed;
+    top: 0;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 
-.contenido-proyecto p {
-    text-align: center;
-    color: #fff;
-    font-family: Calibri;
-    font-size: 1.2em;
-    padding: 0 1.5em;
-}
-
-.contenido-proyecto a {
+#navbar a {
+    padding: 1.45em 2em;
     text-decoration: none;
     color: #fff;
-    font-size: 1.2em;
-    font-family: 'Roboto Mono', monospace;
-    background-color: #3f742f;
-    border: 1.5px solid #fff;
-    margin-top: 1.3em;
-    margin-bottom: 1.3em;
-    padding: 0.8em 1.6em;
-    border-radius: .2em;
-    text-shadow: 1px 1px 1px black;
+    font-size: 1.3em;
+    font-family: monospace;
 }
 
-.contenido-proyecto a:hover {
-    background-color: #507744;
+#navbar a:hover {
+    background-color: #e6da3d;
+    color: #0B0D17;
 }
 
-.imagen-proyecto {
-    align-self: center;
-    margin: 0 1em;
-    width: 15em;
-    height: 15em;
-    object-fit: cover;
-    border-radius: .5em;
-}
-
-#equipo {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.persona {
+#welcome-section {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 1em;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6da3d;
 }
 
-.persona img {
-    width: 15em;
-    height: 15em;
-    border: 2px solid #3dc530;
-    object-fit: cover;
-    align-self: center;
-    margin-bottom: 0.6em;
+#welcome-section h1 {
+    margin: 1em 0;
+    color: #0B0D17;
+    font-size: 4em;
+    font-family: 'Rubik';
 }
 
-.persona figcaption {
-    text-align: center;
-    color: #fff;
+#welcome-section p {
+    color: #0B0D17;
     font-family: Calibri;
-    font-size: 1.2em;
-    padding: 0 1.5em;
+    font-size: 2em;
+    font-style: italic;
+}
+
+#projects {
+    margin: 0 1em;    
+}
+
+#projects h2 {
+    font-family: 'Rubik';
+    color: #0B0D17;
+    text-align: center;
+    margin: 1em 0;
+    text-decoration: underline #683;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+}
+
+#contacto {
+    margin-top: 4em;
+}
+
+.project p {
+    background-color: #0B0D17;
+    color: #fff;
+    padding: .4em .5em;
+    text-align: center;
+    font-family: monospace;
+}
+
+.project a {
+    background-color: #555;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: .5em .5em;
+    font-family: 'Rubik';
+    border: 2px solid #0B0D17;
+}
+
+.project a:hover {
+    background-color: #683;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 16em;
+}
+
+#contacto h2 {
+    font-family: 'Rubik';
+    color: #0B0D17;
+    text-align: center;
+    margin: 1em 0;
+    text-decoration: underline #683;
+    font-size: 2.2em;
+}
+
+.contacto__links a {
+    text-decoration: none;
+    color: #0B0D17;
+    margin: 0 1.2em;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 1px #0B0D17;
+    font-family: Calibri;
+}
+
+.contacto__links a:hover{
+    color: #e6da3d;
+}
+
+i {
+    margin: 0 .3em;
 }
 
 footer {
-    background-color: #0c110b;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    background-color: black;
+    color: #ededed;
+    height: 1.5em;
 }
 
-footer p {
-    color: #fff;
-    font-family: Calibri;
-    align-self: flex-end;
+
+
+@media only screen and (max-width:500px) {
+    #navbar {
+        justify-content: center;
+    }
+
+    #welcome-section h1 {
+        text-align: center;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 1em;
+    }
+
+    #projects {
+        height: 32em;
+    }
+
+    #contacto {
+        justify-content: flex-start;
+    }
+
+    .contacto__links {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
 }
 
-.footer-derecha {
-    display: flex;
-    flex-direction: column;
-    height: 8em;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.footer-enlaces {
-    display: flex;
-    flex-direction: column;
-    margin: 1em 0;
-    flex-wrap: wrap;
-}
-
-.footer-enlaces a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: Calibri;
-}
-
-.footer-enlaces a:hover {
-    color: #3dc530;
-}
-
-.footer-enlaces li {
-    display: inline-block;
-    margin: .1em 0;
-}
-
-.footer-rs {
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.imgt {
-    width: 1.4em;
-    height: 1.4em;
-}
