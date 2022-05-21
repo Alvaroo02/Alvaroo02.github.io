@@ -103,7 +103,8 @@ body {
 }
 
 .project a:hover {
-    background-color: #683;
+    background-color: #ededed;
+    color: #0B0D17;
 }
 
 #contacto {
