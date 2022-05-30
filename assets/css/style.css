@@ -1305,8 +1305,10 @@ html, body {
 }
 
 .review .img-res {
-  max-width: 150%;
-  max-height: 150%;
+   width: 9%;
+  height: 15%;
+  margin: 0 auto;
+  border-radius: .3em;
 }
 
 .review p {
@@ -1361,6 +1363,9 @@ html, body {
   }
   .section-reviews.site-section .review-author:before {
     top: -25px;
+  }
+   .review .img-res {
+    width: 16%;
   }
 }
 
